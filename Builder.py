@@ -21,10 +21,10 @@ class Builder(ABC):
 
 class ConcreteBuilder1(Builder):
 
-    def __init__(self) -> None:
+    def __init__(self):
         self.reset()
 
-    def reset(self) -> None:
+    def reset(self):
         self._product = Product1()
 
     @property
