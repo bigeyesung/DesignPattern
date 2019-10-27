@@ -17,15 +17,15 @@ class ExtendedAbstraction(Abstraction):
 class Implementation(ABC):
 
     @abstractmethod
-    def operation_implementation(self) -> str:
+    def operation_implementation(self):
         pass
 
 class ConcreteImplementationA(Implementation):
-    def operation_implementation(self) -> str:
+    def operation_implementation(self):
         return "ConcreteImplementationA: Here's the result on the platform A."
 
 class ConcreteImplementationB(Implementation):
-    def operation_implementation(self) -> str:
+    def operation_implementation(self):
         return "ConcreteImplementationB: Here's the result on the platform B."
 
 def client_code(abstraction: Abstraction) -> None:
