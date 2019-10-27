@@ -57,3 +57,7 @@ class Director:
 
     def __init__(self) -> None:
         self._builder = None
+
+    @property
+    def builder(self) -> Builder:
+        return self._builder
