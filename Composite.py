@@ -16,3 +16,7 @@ class Component(ABC):
 
     def remove(self, component: Component) -> None:
         pass
+
+    def is_composite(self) -> bool:
+        return False
+
