@@ -20,3 +20,6 @@ class Builder(ABC):
         pass
 
 class ConcreteBuilder1(Builder):
+
+    def __init__(self) -> None:
+        self.reset()
