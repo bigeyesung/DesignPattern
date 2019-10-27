@@ -36,3 +36,7 @@ class Composite(Component):
     def add(self, component: Component) -> None:
         self._children.append(component)
         component.parent = self
+
+    def remove(self, component: Component) -> None:
+        self._children.remove(component)
+        component.parent = None
