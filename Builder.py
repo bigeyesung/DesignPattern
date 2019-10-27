@@ -23,3 +23,6 @@ class ConcreteBuilder1(Builder):
 
     def __init__(self) -> None:
         self.reset()
+
+    def reset(self) -> None:
+        self._product = Product1()
