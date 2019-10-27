@@ -20,3 +20,6 @@ class Component(ABC):
     def is_composite(self) -> bool:
         return False
 
+    @abstractmethod
+    def operation(self) -> str:
+        pass
