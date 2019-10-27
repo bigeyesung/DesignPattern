@@ -26,7 +26,7 @@ class Component(ABC):
 
 class Leaf(Component):
 
-    def operation(self) -> str:
+    def operation(self):
         return "Leaf"
 
 class Composite(Component):
