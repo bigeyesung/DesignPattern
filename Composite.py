@@ -51,3 +51,4 @@ class Composite(Component):
         return f"Branch({'+'.join(results)})"
 
 def client_code(component: Component) -> None:
+    print(f"RESULT: {component.operation()}", end="")
