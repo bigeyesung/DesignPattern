@@ -27,3 +27,5 @@ class ConcreteImplementationA(Implementation):
 class ConcreteImplementationB(Implementation):
     def operation_implementation(self) -> str:
         return "ConcreteImplementationB: Here's the result on the platform B."
+
+def client_code(abstraction: Abstraction) -> None:
