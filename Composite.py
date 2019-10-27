@@ -30,4 +30,5 @@ class Leaf(Component):
         return "Leaf"
 
 class Composite(Component):
-    
+    def __init__(self) -> None:
+        self._children: List[Component] = []
