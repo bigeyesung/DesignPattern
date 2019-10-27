@@ -73,3 +73,5 @@ class Director:
         self.builder.produce_part_a()
         self.builder.produce_part_b()
         self.builder.produce_part_c()
+
+if __name__ == "__main__":
