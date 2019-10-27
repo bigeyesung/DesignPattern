@@ -28,3 +28,6 @@ class Leaf(Component):
 
     def operation(self) -> str:
         return "Leaf"
+
+class Composite(Component):
+    
