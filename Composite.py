@@ -6,3 +6,6 @@ class Component(ABC):
     @property
     def parent(self) -> Component:
         return self._parent
+
+    @parent.setter
+    def parent(self, parent: Component):
