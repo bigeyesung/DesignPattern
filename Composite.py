@@ -50,10 +50,10 @@ class Composite(Component):
             results.append(child.operation())
         return f"Branch({'+'.join(results)})"
 
-def client_code(component: Component) -> None:
+def client_code(component: Component):
     print(f"RESULT: {component.operation()}", end="")
 
-def client_code2(component1: Component, component2: Component) -> None:
+def client_code2(component1: Component, component2: Component):
     if component1.is_composite():
         component1.add(component2)
 
