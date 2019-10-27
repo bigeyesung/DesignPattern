@@ -58,3 +58,5 @@ def client_code2(component1: Component, component2: Component) -> None:
         component1.add(component2)
 
     print(f"RESULT: {component1.operation()}", end="")
+if __name__ == "__main__":
+    
