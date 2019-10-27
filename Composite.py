@@ -43,3 +43,9 @@ class Composite(Component):
 
     def is_composite(self) -> bool:
         return True
+
+    def operation(self) -> str:
+        results = []
+        for child in self._children:
+            results.append(child.operation())
+        return f"Branch({'+'.join(results)})"
