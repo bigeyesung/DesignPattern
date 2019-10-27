@@ -55,11 +55,11 @@ class Product1():
 
 class Director:
 
-    def __init__(self) -> None:
+    def __init__(self):
         self._builder = None
 
     @property
-    def builder(self) -> Builder:
+    def builder(self):
         return self._builder
 
     @builder.setter
