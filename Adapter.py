@@ -13,7 +13,7 @@ class Adapter(Target):
         self.adaptee = adaptee
     
     def request(self):
-        return fself.adaptee.specific_request()[::-1]
+        return self.adaptee.specific_request()[::-1]
 
 def client_code(target: Target):
     print(target.request(), end="")
