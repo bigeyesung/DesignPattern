@@ -75,3 +75,6 @@ class Director:
         self.builder.produce_part_c()
 
 if __name__ == "__main__":
+    director = Director()
+    builder = ConcreteBuilder1()
+    director.builder = builder
