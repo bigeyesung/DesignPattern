@@ -10,3 +10,6 @@ class Component(ABC):
     @parent.setter
     def parent(self, parent: Component):
         self._parent = parent
+
+    def add(self, component: Component) -> None:
+        pass
