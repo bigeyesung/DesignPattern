@@ -22,3 +22,7 @@ if __name__ == "__main__":
     target = Target()
     client_code(target)
     print("\n")
+
+    daptee = Adaptee()
+    print("Client: The Adaptee class has a weird interface. See, I don't understand it:")
+    print(f"Adaptee: {adaptee.specific_request()}", end="\n\n")
