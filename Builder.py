@@ -61,3 +61,7 @@ class Director:
     @property
     def builder(self) -> Builder:
         return self._builder
+
+    @builder.setter
+    def builder(self, builder: Builder) -> None:
+        self._builder = builder
