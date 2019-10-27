@@ -52,3 +52,5 @@ class Product1():
 
     def list_parts(self) -> None:
         print(f"Product parts: {', '.join(self.parts)}", end="")
+
+class Director:
