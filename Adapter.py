@@ -24,5 +24,5 @@ if __name__ == "__main__":
     print("\n")
 
     daptee = Adaptee()
-    print("Client: The Adaptee class has a weird interface. See, I don't understand it:")
+    print("test")
     print(f"Adaptee: {adaptee.specific_request()}", end="\n\n")
