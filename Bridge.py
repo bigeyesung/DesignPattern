@@ -37,4 +37,8 @@ if __name__ == "__main__":
     abstraction = Abstraction(implementation)
     client_code(abstraction)
 
-    print("\n")    
+    print("\n")
+
+    implementation = ConcreteImplementationB()
+    abstraction = ExtendedAbstraction(implementation)
+    client_code(abstraction)    
