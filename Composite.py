@@ -72,3 +72,6 @@ if __name__ == "__main__":
 
     branch2 = Composite()
     branch2.add(Leaf())
+
+    tree.add(branch1)
+    tree.add(branch2)
