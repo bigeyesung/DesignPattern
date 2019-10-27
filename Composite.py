@@ -40,3 +40,6 @@ class Composite(Component):
     def remove(self, component: Component) -> None:
         self._children.remove(component)
         component.parent = None
+
+    def is_composite(self) -> bool:
+        return True
