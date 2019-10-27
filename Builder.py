@@ -26,3 +26,9 @@ class ConcreteBuilder1(Builder):
 
     def reset(self) -> None:
         self._product = Product1()
+
+    @property
+    def product(self) -> Product1:
+        product = self._product
+        self.reset()
+        return product
