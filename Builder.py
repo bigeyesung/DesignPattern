@@ -91,8 +91,8 @@ if __name__ == "__main__":
 
     print("\n")
 
-    # Remember, the Builder pattern can be used without a Director class.
-    print("Custom product: ")
+    
+    print("test")
     builder.produce_part_a()
     builder.produce_part_b()
     builder.product.list_parts()
