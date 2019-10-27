@@ -15,5 +15,5 @@ class Adapter(Target):
     def request(self):
         return f"Adapter: (TRANSLATED) {self.adaptee.specific_request()[::-1]}"
 
-def client_code(target: Target) -> None:
+def client_code(target: Target):
     print(target.request(), end="")
