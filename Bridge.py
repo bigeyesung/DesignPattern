@@ -7,5 +7,4 @@ class Abstraction:
 
 
     def operation(self) -> str:
-            return (f"Abstraction: Base operation with:\n"
-                    f"{self.implementation.operation_implementation()}")
+            return self.implementation.operation_implementation()
