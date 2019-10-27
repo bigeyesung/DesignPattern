@@ -28,18 +28,18 @@ class ConcreteBuilder1(Builder):
         self._product = Product1()
 
     @property
-    def product(self) -> Product1:
+    def product(self):
         product = self._product
         self.reset()
         return product
 
-    def produce_part_a(self) -> None:
+    def produce_part_a(self):
         self._product.add("PartA1")
 
-    def produce_part_b(self) -> None:
+    def produce_part_b(self):
         self._product.add("PartB1")
 
-    def produce_part_c(self) -> None:
+    def produce_part_c(self):
         self._product.add("PartC1")
 
 class Product1():
