@@ -63,13 +63,13 @@ class Director:
         return self._builder
 
     @builder.setter
-    def builder(self, builder: Builder) -> None:
+    def builder(self, builder: Builder):
         self._builder = builder
 
-    def build_minimal_viable_product(self) -> None:
+    def build_minimal_viable_product(self):
         self.builder.produce_part_a()
 
-    def build_full_featured_product(self) -> None:
+    def build_full_featured_product(self):
         self.builder.produce_part_a()
         self.builder.produce_part_b()
         self.builder.produce_part_c()
