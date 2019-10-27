@@ -14,3 +14,7 @@ class Builder(ABC):
     @abstractmethod
     def produce_part_b(self) -> None:
         pass
+    
+    @abstractmethod
+    def produce_part_c(self) -> None:
+        pass
