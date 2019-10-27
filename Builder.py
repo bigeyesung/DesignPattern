@@ -79,13 +79,13 @@ if __name__ == "__main__":
     builder = ConcreteBuilder1()
     director.builder = builder
 
-    print("Standard basic product: ")
+    print("ttest")
     director.build_minimal_viable_product()
     builder.product.list_parts()
 
     print("\n")
 
-    print("Standard full featured product: ")
+    print("test")
     director.build_full_featured_product()
     builder.product.list_parts()
 
