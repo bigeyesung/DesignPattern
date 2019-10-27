@@ -52,3 +52,9 @@ class Composite(Component):
 
 def client_code(component: Component) -> None:
     print(f"RESULT: {component.operation()}", end="")
+
+def client_code2(component1: Component, component2: Component) -> None:
+    if component1.is_composite():
+        component1.add(component2)
+
+    print(f"RESULT: {component1.operation()}", end="")
