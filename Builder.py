@@ -35,3 +35,6 @@ class ConcreteBuilder1(Builder):
 
     def produce_part_a(self) -> None:
         self._product.add("PartA1")
+
+    def produce_part_b(self) -> None:
+        self._product.add("PartB1")
