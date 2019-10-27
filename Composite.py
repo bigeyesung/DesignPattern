@@ -49,3 +49,5 @@ class Composite(Component):
         for child in self._children:
             results.append(child.operation())
         return f"Branch({'+'.join(results)})"
+
+def client_code(component: Component) -> None:
