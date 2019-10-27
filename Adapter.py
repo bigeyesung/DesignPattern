@@ -27,6 +27,6 @@ if __name__ == "__main__":
     print("test")
     adaptee.specific_request()
 
-    print("Client: But I can work with it via the Adapter:")
+    print("test done)
     adapter = Adapter(adaptee)
     client_code(adapter)
