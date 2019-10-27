@@ -75,3 +75,7 @@ if __name__ == "__main__":
 
     tree.add(branch1)
     tree.add(branch2)
+
+    print("Client: Now I've got a composite tree:")
+    client_code(tree)
+    print("\n")
