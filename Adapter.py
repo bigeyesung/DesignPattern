@@ -1,16 +1,16 @@
 class Target():
 
-    def request(self) -> str:
+    def request(self):
         return "Target: The default target's behavior."
 
 class Adaptee:
-    def specific_request(self) -> str:
+    def specific_request(self):
         return ".eetpadA eht fo roivaheb laicepS"
 
 class Adapter(Target):
 
-    def __init__(self, adaptee: Adaptee) -> None:
+    def __init__(self, adaptee: Adaptee):
         self.adaptee = adaptee
     
-    def request(self) -> str:
+    def request(self):
         return f"Adapter: (TRANSLATED) {self.adaptee.specific_request()[::-1]}"
