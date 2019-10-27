@@ -25,3 +25,6 @@ class Component(ABC):
         pass
 
 class Leaf(Component):
+
+    def operation(self) -> str:
+        return "Leaf"
