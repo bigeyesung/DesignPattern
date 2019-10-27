@@ -43,3 +43,6 @@ class ConcreteBuilder1(Builder):
         self._product.add("PartC1")
 
 class Product1():
+
+    def __init__(self) -> None:
+        self.parts = []
