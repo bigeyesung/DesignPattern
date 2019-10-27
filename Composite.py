@@ -32,3 +32,7 @@ class Leaf(Component):
 class Composite(Component):
     def __init__(self) -> None:
         self._children: List[Component] = []
+
+    def add(self, component: Component) -> None:
+        self._children.append(component)
+        component.parent = self
