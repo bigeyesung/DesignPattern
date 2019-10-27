@@ -30,3 +30,5 @@ class ConcreteImplementationB(Implementation):
 
 def client_code(abstraction: Abstraction) -> None:
         print(abstraction.operation(), end="")
+
+if __name__ == "__main__":
