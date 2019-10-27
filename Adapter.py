@@ -25,4 +25,4 @@ if __name__ == "__main__":
 
     daptee = Adaptee()
     print("test")
-    print(f"Adaptee: {adaptee.specific_request()}", end="\n\n")
+    adaptee.specific_request()
