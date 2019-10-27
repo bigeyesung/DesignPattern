@@ -63,3 +63,9 @@ if __name__ == "__main__":
     print("Client: I've got a simple component:")
     client_code(simple)
     print("\n")
+
+    tree = Composite()
+
+    branch1 = Composite()
+    branch1.add(Leaf())
+    branch1.add(Leaf())
