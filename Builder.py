@@ -54,3 +54,6 @@ class Product1():
         print(f"Product parts: {', '.join(self.parts)}", end="")
 
 class Director:
+
+    def __init__(self) -> None:
+        self._builder = None
