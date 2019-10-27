@@ -4,19 +4,19 @@ from typing import Any
 class Builder(ABC):
 
     @abstractproperty
-    def product(self) -> None:
+    def product(self):
         pass
 
     @abstractmethod
-    def produce_part_a(self) -> None:
+    def produce_part_a(self):
         pass
 
     @abstractmethod
-    def produce_part_b(self) -> None:
+    def produce_part_b(self):
         pass
 
     @abstractmethod
-    def produce_part_c(self) -> None:
+    def produce_part_c(self):
         pass
 
 class ConcreteBuilder1(Builder):
