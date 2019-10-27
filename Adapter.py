@@ -8,3 +8,6 @@ class Adaptee:
         return ".eetpadA eht fo roivaheb laicepS"
 
 class Adapter(Target):
+
+    def __init__(self, adaptee: Adaptee) -> None:
+        self.adaptee = adaptee
