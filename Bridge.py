@@ -15,3 +15,7 @@ class ExtendedAbstraction(Abstraction):
         return self.implementation.operation_implementation()
 
 class Implementation(ABC):
+
+    @abstractmethod
+    def operation_implementation(self) -> str:
+        pass
