@@ -69,3 +69,6 @@ if __name__ == "__main__":
     branch1 = Composite()
     branch1.add(Leaf())
     branch1.add(Leaf())
+
+    branch2 = Composite()
+    branch2.add(Leaf())
