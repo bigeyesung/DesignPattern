@@ -4,24 +4,24 @@ from typing import List
 class Component(ABC):
 
     @property
-    def parent(self) -> Component:
+    def parent(self):
         return self._parent
 
     @parent.setter
     def parent(self, parent: Component):
         self._parent = parent
 
-    def add(self, component: Component) -> None:
+    def add(self, component: Component):
         pass
 
-    def remove(self, component: Component) -> None:
+    def remove(self, component: Component):
         pass
 
-    def is_composite(self) -> bool:
+    def is_composite(self):
         return False
 
     @abstractmethod
-    def operation(self) -> str:
+    def operation(self):
         pass
 
 class Leaf(Component):
