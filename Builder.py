@@ -82,3 +82,9 @@ if __name__ == "__main__":
     print("Standard basic product: ")
     director.build_minimal_viable_product()
     builder.product.list_parts()
+
+    print("\n")
+
+    print("Standard full featured product: ")
+    director.build_full_featured_product()
+    builder.product.list_parts()
