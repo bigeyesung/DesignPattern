@@ -13,3 +13,6 @@ class Component(ABC):
 
     def add(self, component: Component) -> None:
         pass
+
+    def remove(self, component: Component) -> None:
+        pass
