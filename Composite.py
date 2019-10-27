@@ -9,3 +9,4 @@ class Component(ABC):
 
     @parent.setter
     def parent(self, parent: Component):
+        self._parent = parent
