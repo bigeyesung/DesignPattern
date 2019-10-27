@@ -17,3 +17,8 @@ class Adapter(Target):
 
 def client_code(target: Target):
     print(target.request(), end="")
+
+if __name__ == "__main__":
+    target = Target()
+    client_code(target)
+    print("\n")
