@@ -26,3 +26,7 @@ if __name__ == "__main__":
     daptee = Adaptee()
     print("test")
     adaptee.specific_request()
+
+    print("Client: But I can work with it via the Adapter:")
+    adapter = Adapter(adaptee)
+    client_code(adapter)
