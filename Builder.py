@@ -88,3 +88,11 @@ if __name__ == "__main__":
     print("Standard full featured product: ")
     director.build_full_featured_product()
     builder.product.list_parts()
+
+    print("\n")
+
+    # Remember, the Builder pattern can be used without a Director class.
+    print("Custom product: ")
+    builder.produce_part_a()
+    builder.produce_part_b()
+    builder.product.list_parts()
