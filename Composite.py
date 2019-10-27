@@ -30,21 +30,21 @@ class Leaf(Component):
         return "Leaf"
 
 class Composite(Component):
-    def __init__(self) -> None:
+    def __init__(self):
         self._children: List[Component] = []
 
-    def add(self, component: Component) -> None:
+    def add(self, component: Component):
         self._children.append(component)
         component.parent = self
 
-    def remove(self, component: Component) -> None:
+    def remove(self, component: Component):
         self._children.remove(component)
         component.parent = None
 
-    def is_composite(self) -> bool:
+    def is_composite(self):
         return True
 
-    def operation(self) -> str:
+    def operation(self):
         results = []
         for child in self._children:
             results.append(child.operation())
