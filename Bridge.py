@@ -29,3 +29,4 @@ class ConcreteImplementationB(Implementation):
         return "ConcreteImplementationB: Here's the result on the platform B."
 
 def client_code(abstraction: Abstraction) -> None:
+        print(abstraction.operation(), end="")
