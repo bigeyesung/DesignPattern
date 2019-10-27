@@ -60,7 +60,7 @@ def client_code2(component1: Component, component2: Component):
     print(f"RESULT: {component1.operation()}", end="")
 if __name__ == "__main__":
     simple = Leaf()
-    print("Client: I've got a simple component:")
+    print("test componenet")
     client_code(simple)
     print("\n")
 
