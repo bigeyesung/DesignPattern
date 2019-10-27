@@ -32,3 +32,6 @@ class ConcreteBuilder1(Builder):
         product = self._product
         self.reset()
         return product
+
+    def produce_part_a(self) -> None:
+        self._product.add("PartA1")
