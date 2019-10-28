@@ -8,3 +8,7 @@ class Prototype:
         self._primitive = None
         self._component = None
         self._circular_reference = None
+
+    @property
+    def primitive(self) -> Any:
+        return self._primitive
