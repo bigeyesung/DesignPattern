@@ -32,3 +32,6 @@ class Prototype:
     @circular_reference.setter
     def circular_reference(self, value: ComponentWithBackReference) -> None:
         self._circular_reference = value
+
+    def clone(self) -> Prototype:
+        self.component = deepcopy(self.component)
