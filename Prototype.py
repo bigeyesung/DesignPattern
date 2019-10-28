@@ -44,3 +44,7 @@ class ComponentWithBackReference:
 
     def __init__(self, prototype: Prototype):
         self._prototype = prototype
+
+    @property
+    def prototype(self) -> Prototype:
+        return self._prototype
