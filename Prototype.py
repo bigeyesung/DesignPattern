@@ -48,3 +48,7 @@ class ComponentWithBackReference:
     @property
     def prototype(self) -> Prototype:
         return self._prototype
+
+    @prototype.setter
+    def prototype(self, value: Prototype) -> None:
+        self._prototype = value
