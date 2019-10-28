@@ -20,3 +20,7 @@ class Prototype:
     @property
     def component(self) -> object:
         return self._component
+
+    @component.setter
+    def component(self, value: object) -> None:
+        self._component = value
