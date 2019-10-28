@@ -64,21 +64,21 @@ if __name__ == "__main__":
     p2 = p1.clone()
 
     if p1.primitive is p2.primitive:
-        print("Primitive field values have been carried over to a clone. Yay!")
+        print("test")
     else:
-        print("Primitive field values have not been copied. Booo!")
+        print("test")
 
     if p1.component is p2.component:
-        print("Simple component has not been cloned. Booo!")
+        print("test")
     else:
-        print("Simple component has been cloned. Yay!")
+        print("test")
 
     if p1.circular_reference is p2.circular_reference:
-        print("Component with back reference has not been cloned. Booo!")
+        print("test")
     else:
-        print("Component with back reference has been cloned. Yay!")
+        print("test")
 
     if p1.circular_reference.prototype is p2.circular_reference.prototype:
-        print("Component with back reference is linked to original object. Booo!", end="")
+        print("test", end="")
     else:
-        print("Component with back reference is linked to the clone. Yay!", end="")
+        print("test", end="")
