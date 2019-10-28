@@ -62,3 +62,13 @@ if __name__ == "__main__":
     p1.circular_reference = ComponentWithBackReference(p1)
 
     p2 = p1.clone()
+
+    if p1.primitive is p2.primitive:
+        print("Primitive field values have been carried over to a clone. Yay!")
+    else:
+        print("Primitive field values have not been copied. Booo!")
+
+    if p1.component is p2.component:
+        print("Simple component has not been cloned. Booo!")
+    else:
+        print("Simple component has been cloned. Yay!")
