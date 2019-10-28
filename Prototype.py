@@ -16,3 +16,7 @@ class Prototype:
     @primitive.setter
     def primitive(self, value: Any) -> None:
         self._primitive = value
+
+    @property
+    def component(self) -> object:
+        return self._component
