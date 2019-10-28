@@ -41,3 +41,6 @@ class Prototype:
         return deepcopy(self)
 
 class ComponentWithBackReference:
+
+    def __init__(self, prototype: Prototype):
+        self._prototype = prototype
