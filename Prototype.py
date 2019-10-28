@@ -54,3 +54,11 @@ class ComponentWithBackReference:
         self._prototype = value
 
 if __name__ == "__main__":
+
+    # The client code.
+    p1 = Prototype()
+    p1.primitive = 245
+    p1.component = datetime.now()
+    p1.circular_reference = ComponentWithBackReference(p1)
+
+    p2 = p1.clone()
