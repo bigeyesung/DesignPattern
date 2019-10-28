@@ -52,3 +52,5 @@ class ComponentWithBackReference:
     @prototype.setter
     def prototype(self, value: Prototype) -> None:
         self._prototype = value
+
+if __name__ == "__main__":
