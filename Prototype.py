@@ -12,3 +12,7 @@ class Prototype:
     @property
     def primitive(self) -> Any:
         return self._primitive
+
+    @primitive.setter
+    def primitive(self, value: Any) -> None:
+        self._primitive = value
