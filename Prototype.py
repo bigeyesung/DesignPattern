@@ -39,3 +39,5 @@ class Prototype:
         self.circular_reference = deepcopy(self.circular_reference)
         self.circular_reference.prototype = self
         return deepcopy(self)
+
+class ComponentWithBackReference:
