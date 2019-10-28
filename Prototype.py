@@ -24,3 +24,7 @@ class Prototype:
     @component.setter
     def component(self, value: object) -> None:
         self._component = value
+
+    @property
+    def circular_reference(self) -> ComponentWithBackReference:
+        return self._circular_reference
