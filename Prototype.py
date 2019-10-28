@@ -72,3 +72,13 @@ if __name__ == "__main__":
         print("Simple component has not been cloned. Booo!")
     else:
         print("Simple component has been cloned. Yay!")
+
+    if p1.circular_reference is p2.circular_reference:
+        print("Component with back reference has not been cloned. Booo!")
+    else:
+        print("Component with back reference has been cloned. Yay!")
+
+    if p1.circular_reference.prototype is p2.circular_reference.prototype:
+        print("Component with back reference is linked to original object. Booo!", end="")
+    else:
+        print("Component with back reference is linked to the clone. Yay!", end="")
