@@ -12,3 +12,6 @@ class Decorator(Component):
 
     def __init__(self, component: Component) -> None:
         self._component = component
+
+   @property
+    def component(self) -> str:
