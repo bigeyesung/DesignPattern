@@ -7,4 +7,8 @@ class ConcreteComponent(Component):
         return "ConcreteComponent"
 
 class Decorator(Component):
-   _component: Component = None
+
+    _component: Component = None
+
+    def __init__(self, component: Component) -> None:
+        self._component = component
