@@ -15,3 +15,4 @@ class Decorator(Component):
 
    @property
     def component(self) -> str:
+        return self._component
