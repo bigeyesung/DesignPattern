@@ -32,3 +32,9 @@ class ConcreteDecoratorB(Decorator):
 
 def client_code(component: Component) -> None:
     print(f"RESULT: {component.operation()}", end="")
+
+if __name__ == "__main__":
+    simple = ConcreteComponent()
+    print("Client: I've got a simple component:")
+    client_code(simple)
+    print("\n")
