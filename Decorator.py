@@ -22,24 +22,24 @@ class Decorator(Component):
 
 class ConcreteDecoratorA(Decorator):
 
-    def operation(self) -> str:
-        return f"ConcreteDecoratorA({self.component.operation()})"
+    def operation(self):
+        return self.component.operation()
 
 class ConcreteDecoratorB(Decorator):
 
-    def operation(self) -> str:
-        return f"ConcreteDecoratorB({self.component.operation()})"
+    def operation(self):
+        return ConcreteDecoratorB({self.component.operation()})
 
-def client_code(component: Component) -> None:
-    print(f"RESULT: {component.operation()}", end="")
+def client_code(component: Component):
+    print(component.operation())
 
 if __name__ == "__main__":
     simple = ConcreteComponent()
-    print("Client: I've got a simple component:")
+    print("test")
     client_code(simple)
     print("\n")
 
     decorator1 = ConcreteDecoratorA(simple)
     decorator2 = ConcreteDecoratorB(decorator1)
-    print("Client: Now I've got a decorated component:")
+    print("test")
     client_code(decorator2)
