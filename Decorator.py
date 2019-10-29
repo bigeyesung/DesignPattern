@@ -31,3 +31,4 @@ class ConcreteDecoratorB(Decorator):
         return f"ConcreteDecoratorB({self.component.operation()})"
 
 def client_code(component: Component) -> None:
+    print(f"RESULT: {component.operation()}", end="")
