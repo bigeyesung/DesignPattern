@@ -26,6 +26,8 @@ class ConcreteDecoratorA(Decorator):
         return f"ConcreteDecoratorA({self.component.operation()})"
 
 class ConcreteDecoratorB(Decorator):
-    
+
     def operation(self) -> str:
         return f"ConcreteDecoratorB({self.component.operation()})"
+
+def client_code(component: Component) -> None:
