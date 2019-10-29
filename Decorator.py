@@ -1,23 +1,23 @@
 class Component():
-   def operation(self) -> str:
+   def operation(self):
         pass
 
 class ConcreteComponent(Component):
-    def operation(self) -> str:
+    def operation(self):
         return "ConcreteComponent"
 
 class Decorator(Component):
 
     _component: Component = None
 
-    def __init__(self, component: Component) -> None:
+    def __init__(self, component: Component):
         self._component = component
 
     @property
-    def component(self) -> str:
+    def component(self):
         return self._component
 
-    def operation(self) -> str:
+    def operation(self):
         self._component.operation()
 
 class ConcreteDecoratorA(Decorator):
