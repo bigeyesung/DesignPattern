@@ -16,6 +16,11 @@ class Decorator(Component):
     @property
     def component(self) -> str:
         return self._component
-        
+
     def operation(self) -> str:
         self._component.operation()
+
+class ConcreteDecoratorA(Decorator):
+
+    def operation(self) -> str:
+        return f"ConcreteDecoratorA({self.component.operation()})"
