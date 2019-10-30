@@ -6,3 +6,5 @@ class SingletonMeta(type):
         if self._instance is None:
             self._instance = super().__call__()
         return self._instance
+
+class Singleton(metaclass=SingletonMeta):
