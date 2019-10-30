@@ -11,3 +11,6 @@ class Singleton(metaclass=SingletonMeta):
     def some_business_logic(self):
 
 if __name__ == "__main__":
+
+    s1 = Singleton()
+    s2 = Singleton()
