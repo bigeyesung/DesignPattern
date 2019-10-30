@@ -8,3 +8,4 @@ class SingletonMeta(type):
         return self._instance
 
 class Singleton(metaclass=SingletonMeta):
+    def some_business_logic(self):
