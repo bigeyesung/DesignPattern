@@ -25,9 +25,9 @@ class Subsystem1:
 class Subsystem2:
 
     def operation1(self):
-        return "Subsystem2: Get ready!"
+        return "test1"
     def operation_z(self):
-        return "Subsystem2: Fire!"
+        return "test2"
 
 def client_code(facade: Facade):
 
