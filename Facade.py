@@ -28,3 +28,5 @@ class Subsystem2:
         return "Subsystem2: Get ready!"
     def operation_z(self) -> str:
         return "Subsystem2: Fire!"
+
+def client_code(facade: Facade) -> None:
