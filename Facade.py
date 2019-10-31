@@ -16,20 +16,20 @@ class Facade:
         return "\n".join(results)
 class Subsystem1:
 
-    def operation1(self) -> str:
+    def operation1(self):
         return "Subsystem1: Ready!"
 
-    def operation_n(self) -> str:
+    def operation_n(self):
         return "Subsystem1: Go!"
 
 class Subsystem2:
 
-    def operation1(self) -> str:
+    def operation1(self):
         return "Subsystem2: Get ready!"
-    def operation_z(self) -> str:
+    def operation_z(self):
         return "Subsystem2: Fire!"
 
-def client_code(facade: Facade) -> None:
+def client_code(facade: Facade):
 
     print(facade.operation(), end="")
 
