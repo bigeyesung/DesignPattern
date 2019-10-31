@@ -1,11 +1,11 @@
 from __future__ import annotations
 class Facade:
 
-    def __init__(self, subsystem1: Subsystem1, subsystem2: Subsystem2) -> None:
+    def __init__(self, subsystem1: Subsystem1, subsystem2: Subsystem2):
         self._subsystem1 = subsystem1 or Subsystem1()
         self._subsystem2 = subsystem2 or Subsystem2()
 
-    def operation(self) -> str:
+    def operation(self):
         results = []
         results.append("Facade initializes subsystems:")
         results.append(self._subsystem1.operation1())
