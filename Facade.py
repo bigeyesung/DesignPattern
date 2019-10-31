@@ -21,3 +21,5 @@ class Subsystem1:
 
     def operation_n(self) -> str:
         return "Subsystem1: Go!"
+
+class Subsystem2:
