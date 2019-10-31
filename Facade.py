@@ -6,3 +6,7 @@ class Facade:
         self._subsystem2 = subsystem2 or Subsystem2()
 
     def operation(self) -> str:
+        results = []
+        results.append("Facade initializes subsystems:")
+        results.append(self._subsystem1.operation1())
+        results.append(self._subsystem2.operation1())
