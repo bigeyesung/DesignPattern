@@ -15,4 +15,6 @@ class Facade:
         results.append(self._subsystem2.operation_z())
         return "\n".join(results)
 class Subsystem1:
-    
+
+    def operation1(self) -> str:
+        return "Subsystem1: Ready!"
