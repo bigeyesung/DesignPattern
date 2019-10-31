@@ -14,3 +14,5 @@ class Facade:
         results.append(self._subsystem1.operation_n())
         results.append(self._subsystem2.operation_z())
         return "\n".join(results)
+class Subsystem1:
+    
