@@ -30,3 +30,5 @@ class Subsystem2:
         return "Subsystem2: Fire!"
 
 def client_code(facade: Facade) -> None:
+
+    print(facade.operation(), end="")
