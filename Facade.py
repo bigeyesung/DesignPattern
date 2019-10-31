@@ -23,3 +23,6 @@ class Subsystem1:
         return "Subsystem1: Go!"
 
 class Subsystem2:
+
+    def operation1(self) -> str:
+        return "Subsystem2: Get ready!"
