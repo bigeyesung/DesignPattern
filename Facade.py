@@ -10,3 +10,7 @@ class Facade:
         results.append("Facade initializes subsystems:")
         results.append(self._subsystem1.operation1())
         results.append(self._subsystem2.operation1())
+        results.append("Facade orders subsystems to perform the action:")
+        results.append(self._subsystem1.operation_n())
+        results.append(self._subsystem2.operation_z())
+        return "\n".join(results)
