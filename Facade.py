@@ -17,10 +17,10 @@ class Facade:
 class Subsystem1:
 
     def operation1(self):
-        return "Subsystem1: Ready!"
+        return "ready"
 
     def operation_n(self):
-        return "Subsystem1: Go!"
+        return "Go!"
 
 class Subsystem2:
 
