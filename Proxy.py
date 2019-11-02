@@ -9,3 +9,5 @@ class RealSubject(Subject):
 
     def request(self) -> None:
         print("RealSubject: Handling request.")
+
+class Proxy(Subject):
