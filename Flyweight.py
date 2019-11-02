@@ -19,4 +19,6 @@ class FlyweightFactory():
 
     def get_key(self, state: Dict) -> str:
 
-            return "_".join(sorted(state))
+        return "_".join(sorted(state))
+
+    def get_flyweight(self, shared_state: Dict) -> Flyweight:
