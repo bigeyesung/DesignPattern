@@ -32,12 +32,12 @@ def client_code(subject: Subject):
 
 if __name__ == "__main__":
 
-    print("Client: Executing the client code with a real subject:")
+    print("test1")
     real_subject = RealSubject()
     client_code(real_subject)
 
     print("")
 
-    print("Client: Executing the same client code with a proxy:")
+    print("test2")
     proxy = Proxy(real_subject)
     client_code(proxy)
