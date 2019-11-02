@@ -9,3 +9,5 @@ class Flyweight():
             s = json.dumps(self._shared_state)
             u = json.dumps(unique_state)
             print(f"Flyweight: Displaying shared ({s}) and unique ({u}) state.", end="")
+
+class FlyweightFactory():
