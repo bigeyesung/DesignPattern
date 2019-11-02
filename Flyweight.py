@@ -49,3 +49,13 @@ def add_car_to_police_database(
     flyweight.operation([plates, owner])
 
 if __name__ == "__main__":
+
+    factory = FlyweightFactory([
+        ["Chevrolet", "Camaro2018", "pink"],
+        ["Mercedes Benz", "C300", "black"],
+        ["Mercedes Benz", "C500", "red"],
+        ["BMW", "M5", "red"],
+        ["BMW", "X6", "white"],
+    ])
+
+    factory.list_flyweights()
