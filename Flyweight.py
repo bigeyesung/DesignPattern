@@ -31,3 +31,8 @@ class FlyweightFactory():
             print("FlyweightFactory: Reusing existing flyweight.")
 
         return self._flyweights[key]
+
+    def list_flyweights(self) -> None:
+        count = len(self._flyweights)
+        print(f"FlyweightFactory: I have {count} flyweights:")
+        print("\n".join(map(str, self._flyweights.keys())), end="")
