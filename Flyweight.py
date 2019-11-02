@@ -12,3 +12,7 @@ class Flyweight():
 
 class FlyweightFactory():
     _flyweights: Dict[str, Flyweight] = {}
+
+    def __init__(self, initial_flyweights: Dict) -> None:
+            for state in initial_flyweights:
+                self._flyweights[self.get_key(state)] = Flyweight(state)
