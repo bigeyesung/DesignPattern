@@ -42,7 +42,7 @@ def add_car_to_police_database(
     brand: str, model: str, color: str
     ):
 
-    print("\n\nClient: Adding a car to database.")
+    print("Adding a car to database.")
     flyweight = factory.get_flyweight([brand, model, color])
     # The client code either stores or calculates extrinsic state and passes it
     # to the flyweight's methods.
