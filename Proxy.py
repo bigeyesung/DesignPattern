@@ -23,3 +23,6 @@ class Proxy(Subject):
     def check_access(self) -> bool:
         print("Proxy: Checking access prior to firing a real request.")
         return True
+
+    def log_access(self) -> None:
+        print("Proxy: Logging the time of request.", end="")
