@@ -22,3 +22,12 @@ class FlyweightFactory():
         return "_".join(sorted(state))
 
     def get_flyweight(self, shared_state: Dict) -> Flyweight:
+        key = self.get_key(shared_state)
+
+        if not self._flyweights.get(key):
+            print("FlyweightFactory: Can't find a flyweight, creating new one.")
+            self._flyweights[key] = Flyweight(shared_state)
+        else:
+            print("FlyweightFactory: Reusing existing flyweight.")
+
+        return self._flyweights[key]
