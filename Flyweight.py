@@ -47,3 +47,5 @@ def add_car_to_police_database(
     # The client code either stores or calculates extrinsic state and passes it
     # to the flyweight's methods.
     flyweight.operation([plates, owner])
+
+if __name__ == "__main__":
