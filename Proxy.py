@@ -16,3 +16,6 @@ class Proxy(Subject):
         self._real_subject = real_subject
 
     def request(self) -> None:
+        if self.check_access():
+            self._real_subject.request()
+            self.log_access()
