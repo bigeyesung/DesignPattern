@@ -8,7 +8,7 @@ class Subject(ABC):
 class RealSubject(Subject):
 
     def request(self):
-        print("RealSubject: Handling request.")
+        print("test")
 
 class Proxy(Subject):
 
@@ -21,11 +21,11 @@ class Proxy(Subject):
             self.log_access()
 
     def check_access(self):
-        print("Proxy: Checking access prior to firing a real request.")
+        print("test")
         return True
 
     def log_access(self):
-        print("Proxy: Logging the time of request.", end="")
+        print("test")
 
 def client_code(subject: Subject):
     subject.request()
