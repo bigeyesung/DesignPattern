@@ -26,3 +26,8 @@ class Proxy(Subject):
 
     def log_access(self) -> None:
         print("Proxy: Logging the time of request.", end="")
+
+def client_code(subject: Subject) -> None:
+    subject.request()
+
+if __name__ == "__main__":
