@@ -16,3 +16,7 @@ class FlyweightFactory():
     def __init__(self, initial_flyweights: Dict) -> None:
             for state in initial_flyweights:
                 self._flyweights[self.get_key(state)] = Flyweight(state)
+
+    def get_key(self, state: Dict) -> str:
+
+            return "_".join(sorted(state))
