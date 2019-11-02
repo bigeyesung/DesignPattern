@@ -11,3 +11,8 @@ class RealSubject(Subject):
         print("RealSubject: Handling request.")
 
 class Proxy(Subject):
+
+    def __init__(self, real_subject: RealSubject) -> None:
+        self._real_subject = real_subject
+
+    def request(self) -> None:
