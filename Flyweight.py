@@ -11,3 +11,4 @@ class Flyweight():
             print(f"Flyweight: Displaying shared ({s}) and unique ({u}) state.", end="")
 
 class FlyweightFactory():
+    _flyweights: Dict[str, Flyweight] = {}
